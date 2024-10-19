@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+
+    <!-- Recipe List -->
+    <section class="recipe-list">
+        <h2>Recipes</h2>
+        <div class="recipe-card">
+            <h3>Spaghetti Bolognese</h3>
+            <p>A classic Italian pasta dish with rich tomato sauce and meat.</p>
+            <a href="#recipe1">View Recipe</a>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Chicken Curry</h3>
+            <p>A flavorful chicken curry with Indian spices.</p>
+            <a href="#recipe2">View Recipe</a>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Vegetable Stir-fry</h3>
+            <p>Quick and healthy vegetable stir-fry with soy sauce.</p>
+            <a href="#recipe3">View Recipe</a>
+        </div>
+    </section>
+
+    <!-- Recipe Details (Tables) -->
+    <section id="recipe1" class="recipe-detail">
+        <h2>Spaghetti Bolognese</h2>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Spaghetti</td>
+                <td>200g</td>
+            </tr>
+            <tr>
+                <td>Ground beef</td>
+                <td>250g</td>
+            </tr>
+            <tr>
+                <td>Tomato sauce</td>
+                <td>200ml</td>
+            </tr>
+        </table>
+        <h3>Instructions</h3>
+        <p>1. Boil the spaghetti.</p>
+        <p>2. Cook the ground beef until browned.</p>
+        <p>3. Add tomato sauce and simmer for 15 minutes.</p>
+        <p>4. Serve the sauce over spaghetti.</p>
+    </section>
+
+    <!-- Add/Edit Recipe Form -->
+    <section class="recipe-form">
+        <h2>Add/Edit Recipe</h2>
+        <form action="submit_recipe.html" method="post">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+            
+            <label for="recipe-ingredients">Ingredients:</label>
+            <textarea id="recipe-ingredients" name="recipe-ingredients" rows="4" required></textarea>
+            
+            <label for="recipe-instructions">Instructions:</label>
+            <textarea id="recipe-instructions" name="recipe-instructions" rows="6" required></textarea>
+            
+            <button type="submit">Save Recipe</button>
+        </form>
+    </section>
+
+</body>
+</html>
